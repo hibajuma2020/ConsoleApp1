@@ -146,14 +146,52 @@ switch (option)
                             Console.WriteLine("No duplicates");
 
                             break;
+                             Task BB:
+                                
+                Console.WriteLine("Enter how many numbers:");
+                int n = int.Parse(Console.ReadLine());
 
+                int[] arr = new int[n];
+
+                for (int i = 0; i < n; i++)
+                {
+                    Console.WriteLine("Enter number " + (i + 1) + ":");
+                    arr[i] = int.Parse(Console.ReadLine());
+                }
+
+                bool hasDuplicate = false;
+
+                for (int i = 0; i < n; i++)
+                {
+                    for (int j = i + 1; j < n; j++)
+                    {
+                        if (arr[i] == arr[j])
+                        {
+                            hasDuplicate = true;
+                            break;
                         }
+                    }
+
+                    if (hasDuplicate)
+                    {
+                        break;
+                    }
+                }
+
+                if (hasDuplicate)
+                {
+                    Console.WriteLine("Has duplicates");
+                }
+                else
+                {
+                    Console.WriteLine("No duplicates");
+
+                    break;
                 }
             }
+        }
+    }
 
-                        }
-                }
-            }
-        
-             
+}
+               
         
