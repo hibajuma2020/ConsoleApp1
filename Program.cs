@@ -56,6 +56,27 @@ switch (option)
                             Console.WriteLine("Odd");
                         }
                         break;
+
+                    case 3:
+                        Console.WriteLine("Enter how many numbers:");
+                        int N = int.Parse(Console.ReadLine());
+
+                        Console.WriteLine("Enter number 1:");
+                        int smallest = int.Parse(Console.ReadLine());
+
+                        for (int i = 2; i <= N; i++)
+                        {
+                            Console.WriteLine("Enter number " + i + ":");
+                            int numberN = int.Parse(Console.ReadLine());
+
+                            if (numberN < smallest)
+                            {
+                                smallest = numberN;
+                            }
+                        }
+
+                        Console.WriteLine("The smallest number is: " + smallest);
+                        break;
                 }
             }
         }
@@ -63,6 +84,5 @@ switch (option)
 
     }
 }
-       
-
+        
         
