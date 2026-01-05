@@ -77,6 +77,32 @@ switch (option)
 
                         Console.WriteLine("The smallest number is: " + smallest);
                         break;
+
+                    case 4:
+                        Console.WriteLine("Enter how many numbers:");
+                        int A = int.Parse(Console.ReadLine());
+
+                        int positiveCount = 0;
+                        int negativeCount = 0;
+
+                        for (int i = 1; i <= A; i++)
+                        {
+                            Console.WriteLine("Enter number " + i + ":");
+                            int numberA = int.Parse(Console.ReadLine());
+
+                            if (numberA> 0)
+                            {
+                                positiveCount = positiveCount + 1;
+                            }
+                            else if (numberA < 0)
+                            {
+                                negativeCount = negativeCount + 1;
+                            }
+                        }
+
+                        Console.WriteLine("Positive numbers count: " + positiveCount);
+                        Console.WriteLine("Negative numbers count: " + negativeCount);
+                        break;
                 }
             }
         }
@@ -84,5 +110,5 @@ switch (option)
 
     }
 }
-        
+             
         
