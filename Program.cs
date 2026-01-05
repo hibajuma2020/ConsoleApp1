@@ -32,20 +32,37 @@ switch (option)
                         for (int i = 0; i <= n; i++)
                         {
                             Console.WriteLine("Enter number " + i + ":");
-                            float number = float.Parse(Console.ReadLine());
+                            float numberN = float.Parse(Console.ReadLine());
 
-                            sum = sum + number;
+                            sum = sum + numberN;
                             count = count + 1;
                         }
 
                         Console.WriteLine("Sum = " + sum);
                         Console.WriteLine("Count = " + count);
                         break;
+
+                    case 2:
+                        
+                        Console.WriteLine("Enter a number:");
+                        int number = int.Parse(Console.ReadLine());
+
+                        if (number % 2 == 0)
+                        {
+                            Console.WriteLine("Even");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Odd");
+                        }
+                        break;
                 }
             }
         }
+
+
     }
 }
-
+       
 
         
