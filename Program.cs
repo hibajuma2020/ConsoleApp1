@@ -116,11 +116,43 @@ switch (option)
                             }
                             Console.WriteLine();
                             break;
+
+                            Task B:
+                                Console.WriteLine("Enter how many numbers:");
+                            int n = int.Parse(Console.ReadLine());
+                            
+                            int[] arr = new int[n];
+
+                            for (int i = 0; i < n; i++)
+                            {
+                                Console.WriteLine("Enter number " + (i + 1) + ":");
+                                arr[i] = int.Parse(Console.ReadLine());
+                            }
+
+                            for (int i = 0; i < n; i++)
+                            {
+                                for (int j = i + 1; j < n; j++)
+                                {
+                                    if (arr[i] == arr[j])
+                                    {
+                                        Console.WriteLine("Has duplicates");
+                                        return; 
+                                        
+                                        // يوقف البرنامج كله
+                                    }
+                                }
+                            }
+
+                            Console.WriteLine("No duplicates");
+
+                            break;
+
                         }
                 }
             }
-        }
-    }
+
+                        }
+                }
             }
         
              
