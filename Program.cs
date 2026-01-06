@@ -187,7 +187,41 @@ switch (option)
                     Console.WriteLine("No duplicates");
 
                     break;
+
+                                Task 5:
+
+                Console.WriteLine("Enter how many numbers:");
+                int n = int.Parse(Console.ReadLine());
+
+                List<int> numbers = new List<int>();
+
+                for (int i = 0; i < n; i++)
+                {
+                    Console.WriteLine("Enter number " + (i + 1) + ":");
+                    int num = int.Parse(Console.ReadLine());
+                    numbers.Add(num);
                 }
+
+                List<int> uniqueNumbers = new List<int>();
+
+                foreach (int num in numbers)
+                {
+                    if (!uniqueNumbers.Contains(num))
+                    {
+                        uniqueNumbers.Add(num);
+                    }
+                }
+
+                Console.WriteLine("List with unique values:");
+                foreach (int num in uniqueNumbers)
+                {
+                    Console.Write(num + " ");
+                }
+            }
+        }
+    }
+
+}
             }
         }
     }
