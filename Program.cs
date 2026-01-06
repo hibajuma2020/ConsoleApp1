@@ -216,16 +216,42 @@ switch (option)
                 foreach (int num in uniqueNumbers)
                 {
                     Console.Write(num + " ");
+                                    break;
+
+                                    Task 6:
+                                        using System;
+
+class Program
+        {
+            static void Main()
+            {
+                Console.WriteLine("Enter N:");
+                int N = int.Parse(Console.ReadLine());
+
+                for (int number = 2; number <= N; number++)
+                {
+                    int count = 0;
+
+                    for (int i = 1; i <= number; i++)
+                    {
+                        if (number % i == 0)
+                        {
+                            count++;
+                        }
+                    }
+
+                    if (count == 2)
+                    {
+                        Console.WriteLine(number);
+                        break;
+                    }
                 }
             }
         }
-    }
 
-}
-            }
-        }
     }
-
 }
+        
+
                
         
