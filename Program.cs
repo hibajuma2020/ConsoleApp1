@@ -19,7 +19,7 @@ namespace ConsoleApp1
                 Console.WriteLine("5.conut number of positive numbers and number of negative numbers");
                 Console.WriteLine("6. output prime numbers");
                 int option = int.Parse(Console.ReadLine());
-switch (option)
+                switch (option)
                 {
 
                     case 1:
@@ -43,7 +43,7 @@ switch (option)
                         break;
 
                     case 2:
-                        
+
                         Console.WriteLine("Enter a number:");
                         int number = int.Parse(Console.ReadLine());
 
@@ -90,7 +90,7 @@ switch (option)
                             Console.WriteLine("Enter number " + i + ":");
                             int numberA = int.Parse(Console.ReadLine());
 
-                            if (numberA> 0)
+                            if (numberA > 0)
                             {
                                 positiveCount = positiveCount + 1;
                             }
@@ -120,7 +120,7 @@ switch (option)
                             Task B:
                                 Console.WriteLine("Enter how many numbers:");
                             int n = int.Parse(Console.ReadLine());
-                            
+
                             int[] arr = new int[n];
 
                             for (int i = 0; i < n; i++)
@@ -136,8 +136,8 @@ switch (option)
                                     if (arr[i] == arr[j])
                                     {
                                         Console.WriteLine("Has duplicates");
-                                        return; 
-                                        
+                                        return;
+
                                         // يوقف البرنامج كله
                                     }
                                 }
@@ -146,111 +146,123 @@ switch (option)
                             Console.WriteLine("No duplicates");
 
                             break;
-                             Task BB:
+                            Task BB:
                                 
                 Console.WriteLine("Enter how many numbers:");
-                int n = int.Parse(Console.ReadLine());
+                            int n = int.Parse(Console.ReadLine());
 
-                int[] arr = new int[n];
+                            int[] arr = new int[n];
 
-                for (int i = 0; i < n; i++)
-                {
-                    Console.WriteLine("Enter number " + (i + 1) + ":");
-                    arr[i] = int.Parse(Console.ReadLine());
-                }
+                            for (int i = 0; i < n; i++)
+                            {
+                                Console.WriteLine("Enter number " + (i + 1) + ":");
+                                arr[i] = int.Parse(Console.ReadLine());
+                            }
 
-                bool hasDuplicate = false;
+                            bool hasDuplicate = false;
 
-                for (int i = 0; i < n; i++)
-                {
-                    for (int j = i + 1; j < n; j++)
-                    {
-                        if (arr[i] == arr[j])
-                        {
-                            hasDuplicate = true;
-                            break;
-                        }
-                    }
+                            for (int i = 0; i < n; i++)
+                            {
+                                for (int j = i + 1; j < n; j++)
+                                {
+                                    if (arr[i] == arr[j])
+                                    {
+                                        hasDuplicate = true;
+                                        break;
+                                    }
+                                }
 
-                    if (hasDuplicate)
-                    {
-                        break;
-                    }
-                }
+                                if (hasDuplicate)
+                                {
+                                    break;
+                                }
+                            }
 
-                if (hasDuplicate)
-                {
-                    Console.WriteLine("Has duplicates");
-                }
-                else
-                {
-                    Console.WriteLine("No duplicates");
+                            if (hasDuplicate)
+                            {
+                                Console.WriteLine("Has duplicates");
+                            }
+                            else
+                            {
+                                Console.WriteLine("No duplicates");
 
-                    break;
+                                break;
 
                                 Task 5:
 
                 Console.WriteLine("Enter how many numbers:");
-                int n = int.Parse(Console.ReadLine());
+                                int n = int.Parse(Console.ReadLine());
 
-                List<int> numbers = new List<int>();
+                                List<int> numbers = new List<int>();
 
-                for (int i = 0; i < n; i++)
-                {
-                    Console.WriteLine("Enter number " + (i + 1) + ":");
-                    int num = int.Parse(Console.ReadLine());
-                    numbers.Add(num);
-                }
+                                for (int i = 0; i < n; i++)
+                                {
+                                    Console.WriteLine("Enter number " + (i + 1) + ":");
+                                    int num = int.Parse(Console.ReadLine());
+                                    numbers.Add(num);
+                                }
 
-                List<int> uniqueNumbers = new List<int>();
+                                List<int> uniqueNumbers = new List<int>();
 
-                foreach (int num in numbers)
-                {
-                    if (!uniqueNumbers.Contains(num))
-                    {
-                        uniqueNumbers.Add(num);
-                    }
-                }
+                                foreach (int num in numbers)
+                                {
+                                    if (!uniqueNumbers.Contains(num))
+                                    {
+                                        uniqueNumbers.Add(num);
+                                    }
+                                }
 
-                Console.WriteLine("List with unique values:");
-                foreach (int num in uniqueNumbers)
-                {
-                    Console.Write(num + " ");
+                                Console.WriteLine("List with unique values:");
+                                foreach (int num in uniqueNumbers)
+                                {
+                                    Console.Write(num + " ");
                                     break;
 
                                     Task 6:
-                                        using System;
 
-class Program
-        {
-            static void Main()
-            {
+
                 Console.WriteLine("Enter N:");
-                int N = int.Parse(Console.ReadLine());
+                                    int N = int.Parse(Console.ReadLine());
 
-                for (int number = 2; number <= N; number++)
-                {
-                    int count = 0;
+                                    for (int number = 2; number <= N; number++)
+                                    {
+                                        int count = 0;
 
-                    for (int i = 1; i <= number; i++)
-                    {
-                        if (number % i == 0)
-                        {
-                            count++;
-                        }
-                    }
+                                        for (int i = 1; i <= number; i++)
+                                        {
+                                            if (number % i == 0)
+                                            {
+                                                count++;
+                                            }
+                                        }
 
-                    if (count == 2)
-                    {
-                        Console.WriteLine(number);
-                        break;
-                    }
-                }
-            }
-        }
+                                        if (count == 2)
+                                        {
+                                            Console.WriteLine(number);
+                                            break;
 
-    }
-}
+
+                      Console.app :
+
+                     string accountNumber = "Saving12053446";
+                     int storeBalance = 5000;
+                     Console.WriteLine("Enter the amount to withdraw: ");
+                     int amount = int.Parse(Console.ReadLine());
+
+                     Console.WriteLine("enter account number:");
+                     string accountNumber = Console.ReadLine();
+
+                     if(accountNumber == storeaccountNumber)
+
+        
+
+    
+
+            
+        
+
+    
+
         
 
                
